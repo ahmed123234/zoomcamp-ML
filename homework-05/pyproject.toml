@@ -1,0 +1,25 @@
+[project]
+name = "hw-lead-scoring"
+version = "0.1.0"
+description = "Lead Scoring Model Deployment"
+dependencies = [
+    # Core machine learning dependency
+    "scikit-learn==1.6.1", 
+    
+    # Required by scikit-learn
+    "numpy",
+    "scipy",
+    "joblib",
+    "threadpoolctl",
+]
+
+
+# Define development dependencies as an optional 'dev' extra group
+[project.optional-dependencies]
+dev = [
+    "fastapi",
+    "uvicorn",
+    "requests",
+]
+
+# You can remove the [tool.uv.dev-dependencies] section entirely
